@@ -1,0 +1,18 @@
+main: cn.wode490390.nukkit.feedback.Feedback
+name: "Feedback"
+author: "wode490390"
+description: "Feedback plugin for Nukkit"
+website: "http://wode490390.cn/"
+version: "${pom.version}"
+api: ["1.0.0"]
+load: POSTWORLD
+commands:
+  fb:
+    description: "Feedback command"
+    usage: "/fb <text>"
+    permission: fb.command;
+    permission-message: "Permission denied!"
+permissions:
+  fb.command:
+    description: "Allows player to use /fb"
+    default: true
